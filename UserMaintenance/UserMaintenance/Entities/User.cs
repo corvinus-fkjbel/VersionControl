@@ -9,20 +9,11 @@ namespace UserMaintenance.Entities
     public class User
     {
         public Guid ID { get; set; } = Guid.NewGuid();
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+       
 
         private int myVar;
 
-        public string FullNAme
-        {
-            get { return string.Format(
-                "{0} {1}",
-                LastName,
-                FirstName);
-            }
-        
-        
-        }
+        public string FullName { get; set; }
+       
     }
 }
