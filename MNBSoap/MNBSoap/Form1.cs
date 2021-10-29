@@ -1,4 +1,5 @@
-﻿using MNBSoap.MnbServicereference;
+﻿using MNBSoap.Entities;
+using MNBSoap.MnbServicereference;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace MNBSoap
 {
     public partial class Form1 : Form
     {
+        BindingList<RateData> Rates = new BindingList<RateData>();
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +31,7 @@ namespace MNBSoap
             mnbService.GetExchangeRates(request);
             var response = mnbService.GetExchangeRates(request);
             var result = response.GetExchangeRatesResult;
+            FileDialog.WriteAllText("export.xml", result);
 
 
         }
