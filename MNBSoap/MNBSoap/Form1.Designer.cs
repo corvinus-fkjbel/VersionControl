@@ -40,25 +40,30 @@ namespace MNBSoap
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(347, 426);
             this.dataGridView1.TabIndex = 0;
             // 
             // chartRateData
             // 
+            this.chartRateData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             chartArea1.Name = "ChartArea1";
             this.chartRateData.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chartRateData.Legends.Add(legend1);
-            this.chartRateData.Location = new System.Drawing.Point(319, 12);
+            this.chartRateData.Location = new System.Drawing.Point(365, 12);
             this.chartRateData.Name = "chartRateData";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartRateData.Series.Add(series1);
-            this.chartRateData.Size = new System.Drawing.Size(300, 300);
+            this.chartRateData.Size = new System.Drawing.Size(423, 426);
             this.chartRateData.TabIndex = 1;
             this.chartRateData.Text = "chart1";
             // 
