@@ -27,6 +27,8 @@ namespace MNBSoap
             request.startDate = "2020-01-01";
             request.endDate = "2020-06-30";
             mnbService.GetExchangeRates(request);
+            var response = mnbService.GetExchangeRates(request);
+            var result = response.GetExchangeRatesResult;
 
 
         }
