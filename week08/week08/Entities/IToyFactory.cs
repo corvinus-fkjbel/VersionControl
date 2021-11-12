@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace week08.Entities
 {
-    public class BallFactory : IToyFactory
+    public interface IToyFactory
     {
-        public Toy CreateNew()
-        {
-            return new Ball();
-        }
+        Toy CreateNew();
     }
 }

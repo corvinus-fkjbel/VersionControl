@@ -9,10 +9,10 @@ using System.Windows.Forms;
 namespace week08.Entities
 {
     public class Ball : Toy
+{
+    protected override void DrawImage(Graphics g)
     {
-        protected override void DrawImage(Graphics g)
-        {
-            g.FillEllipse(new SolidBrush(Color.Blue), 0, 0, Width, Height);
-        }
+        g.FillEllipse(new SolidBrush(Color.Blue), 0, 0, Width, Height);
     }
+}
 }
