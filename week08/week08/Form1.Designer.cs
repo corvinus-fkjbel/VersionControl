@@ -57,6 +57,7 @@ namespace week08
             this.Car.TabIndex = 0;
             this.Car.Text = "CAR";
             this.Car.UseVisualStyleBackColor = true;
+            this.Car.Click += new System.EventHandler(this.Car_Click);
             // 
             // Ball
             // 
@@ -66,6 +67,7 @@ namespace week08
             this.Ball.TabIndex = 1;
             this.Ball.Text = "BALL";
             this.Ball.UseVisualStyleBackColor = true;
+            this.Ball.Click += new System.EventHandler(this.Ball_Click);
             // 
             // label1
             // 

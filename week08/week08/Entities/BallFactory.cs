@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace week08.Entities
 {
-    public class BallFactory : IToyFactory
+    public class BallFactory : ToyFactory
     {
         public Toy CreateNew()
         {

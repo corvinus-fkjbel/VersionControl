@@ -41,7 +41,7 @@ namespace week08
             var maxPosition = 0;
             foreach (var ball in _balls)
             {
-                ball.MoveBall();
+               
                 if (ball.Left > maxPosition)
                     maxPosition = ball.Left;
             }
@@ -54,6 +54,16 @@ namespace week08
             }
         }
 
+
+        private void Car_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Ball_Click(object sender, EventArgs e)
+        {
+            Factory = new BallFactory();
+        }
     }
 
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace week08.Entities
 {
-    public interface IToyFactory
+    public interface ToyFactory
     {
         Toy CreateNew();
     }
